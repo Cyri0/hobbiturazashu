@@ -2,9 +2,9 @@ from django.db import models
 from ckeditor.fields import RichTextField
 
 category_choces = [
-    ('0', 'hazai'),
-    ('1', 'kulfoldi'),
-    ('2', 'utazas'),
+    ('hazai', 'hazai'),
+    ('kulfoldi', 'kulfoldi'),
+    ('utazas', 'utazas'),
 ]
 class Tag(models.Model):
     name = models.CharField(max_length=100)
