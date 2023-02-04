@@ -6,7 +6,7 @@ from .serializers import HikeSerializer, TagSerializer
 
 @api_view(['GET'])
 def getAllHikes(request):
-    hikes = Hike.objects.all()
+    hikes = Hike.objects.all().order_by('-date_of_hike')
     serializer = HikeSerializer(hikes, many=True)
     
     return Response(serializer.data)
@@ -25,7 +25,7 @@ def getLatestHikes(request, volume):
 
 @api_view(['GET'])
 def getHikesByCategory(request, category):
-    hikes = Hike.objects.filter(category = category)
+    hikes = Hike.objects.filter(category = category).order_by('-date_of_hike')
     serializer = HikeSerializer(hikes, many = True)
     return Response(serializer.data)
 
