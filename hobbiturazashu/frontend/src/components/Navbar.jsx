@@ -5,9 +5,9 @@ import "./scss/Hamburger.scss";
 
 let menu_items = [
   { name: "Kezdőlap", link: "/", current: true },
-  { name: "Hazai túrák", link: "/domestic", current: false },
-  { name: "Külföldi túrák", link: "/foreign", current: false },
-  { name: "Utazások", link: "/journeys", current: false },
+  { name: "Hazai túrák", link: "/hazai", current: false },
+  { name: "Külföldi túrák", link: "/kulfoldi", current: false },
+  { name: "Utazások", link: "/utazas", current: false },
   { name: "Rólam", link: "/#about", current: false },
   //{ name: "Kapcsolat", link: "", current: false },
 ];

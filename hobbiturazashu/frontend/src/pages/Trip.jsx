@@ -3,13 +3,14 @@ import MainImage from "../components/MainImage";
 import bgDummy from "../assets/images/bgDummy.jpg";
 import { Link } from 'react-router-dom';
 import { getHikeById } from '../services/HikeService'
-
+import { useParams } from 'react-router-dom'
 
 import "./scss/Trip.scss";
 
 const Trip = ({
 }) => {
 
+  const params = useParams()
   const [tripData, setTripData] = useState(
     { id : 0,
       title : "Sample Title",
@@ -19,7 +20,7 @@ const Trip = ({
       intro : "Lorem ipsum.",
       distance_in_km : 10,
       altitude_in_m : 100,
-      description : "<b>Lorem ipsum</b>"
+      description : "<b>Lorem ipsum</b>",
     }
   )
   const [created, setCreated] = useState()
@@ -44,17 +45,18 @@ const Trip = ({
   }
 
   useEffect( () => {
-    getHikeById(2).then((data)=>{
+    getHikeById(params.id).then((data)=>{
       console.log(data)
       setTripData(data)
     })
   }, [])
 
   useEffect( () => {
-    updateDates()
-    updateTags()
+    if(tripData.tags){
+      updateDates()
+      updateTags()
+    }
   }, [tripData])
-
 
   return (
     <section className="trip">
