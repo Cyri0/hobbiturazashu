@@ -1,0 +1,23 @@
+import React, {useState} from 'react'
+import Hero from '../components/Hero'
+
+
+const Journeys = () => {
+    const [tours, setTours] = useState(
+        [ {"title":"","image":"", "text":"Példa túra", "link":""} ]
+    )
+
+
+    return (
+        <section>
+            <Hero
+                title="Utazások"
+                image={tours[0].image}
+                text={tours[0].text}
+                more_link={tours[0].link}
+            />
+        </section>
+    )
+}
+
+export default Journeys

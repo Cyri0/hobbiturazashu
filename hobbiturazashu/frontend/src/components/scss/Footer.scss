@@ -1,0 +1,36 @@
+footer{
+    min-height: 200px;
+    background-color: var(--secondary);
+    padding-top: 50px;
+    position: relative;
+    overflow: hidden;
+    .contacts{
+        width: 80%;
+        max-width: 250px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a>img{
+            width: 40px;
+            margin: 5px;
+            filter: invert(0.9);
+        }
+
+        a>img:hover{
+            filter: invert(1);
+        }
+    }
+
+    p{
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        a{
+            color: #FAFAFA;
+        }
+    }
+}

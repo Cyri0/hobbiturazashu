@@ -1,0 +1,47 @@
+section#about{
+    .grid_wrapper{
+
+        .about_picture{
+            height: 400px;
+            
+            background-color: green;
+            grid-column: 1;
+            width: 30vw;
+            max-width: 300px;
+            min-width: 20px;
+            background-size: cover;
+            background-position-x: center;
+        }
+    
+        .about_text{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            width: 90%;
+            padding: 0px 20px;
+
+            p{
+                color: #333;
+            }
+
+            p:first-child{
+                margin: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .grid_wrapper{
+            display: block;
+            .about_picture{
+                width: 250px;
+                height: 250px;
+                margin: auto;
+                background-position: center;
+                border-radius: 50%;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+
+}

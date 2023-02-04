@@ -1,0 +1,36 @@
+.hamburger {
+    margin: 0.5em;
+    width: 40px;
+    z-index: 99;
+    padding: 12px 2px;
+    position: relative;
+    right: calc((100vw - 100px)*-1);
+  }
+
+  .hamburger:hover{
+      cursor: pointer;
+  }
+  
+  .hamburger:after, 
+  .hamburger:before, 
+  .hamburger div {
+    background-color: #FAFAFA;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 5px 0;
+    transition: all .3s ease-in-out;
+  }
+
+  .x-hamburger:before {
+    transform: translateY(10px) rotate(135deg);
+  }
+  
+  .x-hamburger:after {
+    transform: translateY(-10px) rotate(-135deg);
+  }
+  
+  .x-hamburger div {
+    transform: scale(0);
+  }

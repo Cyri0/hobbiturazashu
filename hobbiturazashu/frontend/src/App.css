@@ -1,0 +1,6 @@
+.grid_wrapper{
+    overflow: hidden;
+    display: grid;
+    /* grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3); */
+    grid-template-columns: auto auto auto;
+}

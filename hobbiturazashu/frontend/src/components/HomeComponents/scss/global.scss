@@ -1,0 +1,30 @@
+section{
+    padding-bottom: 50px;
+    .section_title{
+        color: #D9895B;
+        width: 100%;
+        border-bottom: 2px solid #D9895B;
+        font-size: 3rem;
+        font-weight: 300;
+        padding-bottom: 20px;
+        margin-bottom: 80px;
+        margin-top: 100px;
+    }
+    
+    div.button_holder{
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        a.more_btn{
+            background-color: var(--secondary);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+        }
+
+        a.more_btn:hover{
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.trip{
+    .content{
+        padding-top: 50px;
+
+        h1{
+            font-size: 3rem;
+            margin-bottom: 25px;
+            color: var(--secondary);
+        }
+
+        h2.date{
+            color: #8E8E8E;
+            font-size: 1.2rem;
+            margin-top: 0px;
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+
+        table{
+            margin-top: 20px;
+        }
+
+        th{
+            text-align: left;
+            padding-right: 5px;
+        }
+        
+        .dateCreated, .dateModified{
+            font-size: 0.8rem;
+            text-align: right;
+        }
+        .dateCreated{
+            font-weight: bold;
+        }
+
+        .dateModified{
+            font-style: italic;
+        }
+
+
+        .intro{
+            font-size: 1.2rem;
+            padding: 20px 0px;
+        }
+
+        .tag{
+            background-color: var(--secondary);
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 5px;
+            font-size: 14px;
+        }
+
+        .tag:hover{
+            text-decoration: underline;
+        }
+    }
+
+}
