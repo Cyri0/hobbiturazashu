@@ -13,8 +13,15 @@ def getAllHikes(request):
 
 @api_view(['GET'])
 def getLatestHikes(request, volume):
-    # TODO
-    pass
+    sorted_hikes = Hike.objects.all().order_by('-date_of_hike')
+
+    if len(sorted_hikes) <= volume:
+        serializer = HikeSerializer(sorted_hikes, many = True)
+        return Response(serializer.data)
+
+    serializer = HikeSerializer(sorted_hikes[0:volume], many = True)
+    return Response(serializer.data)
+
 
 @api_view(['GET'])
 def getHikesByCategory(request, category):
