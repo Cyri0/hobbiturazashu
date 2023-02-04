@@ -40,10 +40,10 @@ function App() {
         <Navbar/>
         <Routes>
             <Route exact path="/" element={<Home/>}/>
-            <Route exact path="/journeys" element={<Journeys/>}/>
-            <Route exact path="/domestic" element={<DomesticTours/>}/>
-            <Route exact path="/foreign" element={<ForeignTours/>}/>
-            <Route exact path="/trip" element={<Trip/>}/>
+            <Route exact path="/utazas" element={<Journeys/>}/>
+            <Route exact path="/hazai" element={<DomesticTours/>}/>
+            <Route exact path="/kulfoldi" element={<ForeignTours/>}/>
+            <Route exact path="/tura" element={<Trip/>}/>
 
         </Routes>
         <Footer/>
