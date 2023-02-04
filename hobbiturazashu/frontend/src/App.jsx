@@ -43,7 +43,7 @@ function App() {
             <Route exact path="/utazas" element={<Journeys/>}/>
             <Route exact path="/hazai" element={<DomesticTours/>}/>
             <Route exact path="/kulfoldi" element={<ForeignTours/>}/>
-            <Route exact path="/tura" element={<Trip/>}/>
+            <Route exact path="/tura/:id" element={<Trip/>}/>
 
         </Routes>
         <Footer/>
