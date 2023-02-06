@@ -9,8 +9,7 @@ import Footer from './components/Footer'
 // PAGES
 import Home from './pages/Home'
 import Journeys from './pages/Journeys'
-import DomesticTours from './pages/DomesticTours'
-import ForeignTours from './pages/ForeignTours'
+import Tours from './pages/Tours'
 import Trip from './pages/Trip'
 
 function App() {
@@ -41,8 +40,8 @@ function App() {
         <Routes>
             <Route exact path="/" element={<Home/>}/>
             <Route exact path="/utazas" element={<Journeys/>}/>
-            <Route exact path="/hazai" element={<DomesticTours/>}/>
-            <Route exact path="/kulfoldi" element={<ForeignTours/>}/>
+            <Route exact path="/hazai" element={<Tours heroTitle="Hazai túrák" categoryName="hazai"/>}/>
+            <Route exact path="/kulfoldi" element={<Tours heroTitle="Külföldi túrák" categoryName="kulfoldi"/>}/>
             <Route exact path="/tura/:id" element={<Trip/>}/>
 
         </Routes>

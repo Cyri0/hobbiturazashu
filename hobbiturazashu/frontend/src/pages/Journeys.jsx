@@ -7,7 +7,6 @@ const Journeys = () => {
         [ {"title":"","image":"", "text":"Példa túra", "link":""} ]
     )
 
-
     return (
         <section>
             <Hero

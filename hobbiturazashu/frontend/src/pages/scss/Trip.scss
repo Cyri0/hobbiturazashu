@@ -2,6 +2,26 @@
     .content{
         padding-top: 50px;
 
+        color: rgb(65, 65, 65);
+
+        p{
+            font-size: 1rem;
+            line-height: 2rem;
+            text-indent: 2rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+            p, .intro{
+                text-align: justify;
+            }
+        }
+
+        img{
+            max-width: 100%;
+            display: block;
+            margin: auto;
+        }
+
         h1{
             font-size: 3rem;
             margin-bottom: 25px;
@@ -39,8 +59,12 @@
 
 
         .intro{
-            font-size: 1.2rem;
-            padding: 20px 0px;
+            font-size: 1.1rem;
+            line-height: 2rem;
+            padding: 0px 20px;
+            border-left: 2px solid gray;
+            border-right: 2px solid gray;
+            margin: 20px auto;
         }
 
         .tag{

@@ -1,0 +1,24 @@
+.tours-preview.container{
+
+    margin: auto;
+    padding-top: 50px;
+    .tourCard{
+        background-size: cover;
+        background-position: center;
+            .bgColorizer{
+            color: white;
+            a{
+                color: white;
+                text-align: right;
+            }
+            min-height: 200px;
+            background-color: rgba(1, 1, 29, 0.495);
+            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
