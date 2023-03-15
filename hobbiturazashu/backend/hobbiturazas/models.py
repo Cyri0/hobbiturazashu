@@ -5,6 +5,7 @@ category_choces = [
     ('hazai', 'hazai'),
     ('kulfoldi', 'kulfoldi'),
     ('utazas', 'utazas'),
+    ('tervek', 'tervek'),
 ]
 class Tag(models.Model):
     name = models.CharField(max_length=100)
